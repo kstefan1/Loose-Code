@@ -14,13 +14,13 @@ int main(){
   file.seekg(0, ios::beg);
 
   uchar *trainX = new uchar[size];
-  if (! file.read(buffer.data(), size))
+  if (! file.read(trainX, size))
   {
     cout << "Error reading file"
     return 0;
   }
   
-  void *trainX_d = cudaMalloc()  
+  void *trainX_d;
   
   cudaMalloc(&trainX_d, size);
   
