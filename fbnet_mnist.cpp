@@ -2,6 +2,8 @@
 #include <fstream>
 #include <cuda_runtime_api.h>
 #include <cuda.h>
+#include <curand.h>
+#Include <cublas_v2.h>
 
 using namespace std;
 
