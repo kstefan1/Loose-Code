@@ -4,6 +4,7 @@
 #include <cuda.h>
 #include <curand.h>
 #include <cublas_v2.h>
+#include <cstdint>
 
 using namespace std;
 
@@ -25,6 +26,8 @@ int main(){
   void *trainX_d;
   
   cudaMalloc(&trainX_d, size);
+  
+  cout << (intptr_t(trainX_d) % 16 );
   
   return 0;
 }
