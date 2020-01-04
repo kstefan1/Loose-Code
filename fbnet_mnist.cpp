@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <cuda_runtime_api.h>
+#include <cuda.h>
 
 using namespace std;
 
